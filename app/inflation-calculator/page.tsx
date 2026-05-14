@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import AdSlot from "@/components/AdSlot";
 import Calculator from "@/components/Calculator";
 import MethodologyNote from "@/components/MethodologyNote";
 import RankingHighlights from "@/components/RankingHighlights";
@@ -23,9 +22,7 @@ export default function InflationCalculatorPage() {
         <p className="mt-3 max-w-3xl text-lg leading-8 text-slate-600">Choose any available base year and comparison year. The calculator derives year options from the selected location’s CPI series.</p>
       </div>
       <Calculator metros={metros} initialSlug="united-states" cpiBySlug={cpi} wagesBySlug={wages} />
-      <AdSlot slotName="inflation-calculator-after-results" />
       <RankingHighlights />
-      <AdSlot slotName="inflation-calculator-lower-body" />
       <MethodologyNote />
     </main>
   );

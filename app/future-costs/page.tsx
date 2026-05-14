@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import AdSlot from "@/components/AdSlot";
 import FutureCostExplorer from "@/components/FutureCostExplorer";
 import { getAllMetros } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
@@ -19,7 +18,6 @@ export default function FutureCostsPage() {
         <p className="mt-3 max-w-3xl text-lg leading-8 text-slate-600">Scenario estimates based on historical inflation, not predictions or financial advice.</p>
       </div>
       <FutureCostExplorer metros={getAllMetros()} cpiBySlug={cpi} />
-      <AdSlot slotName="future-costs-lower-body" />
     </main>
   );
 }

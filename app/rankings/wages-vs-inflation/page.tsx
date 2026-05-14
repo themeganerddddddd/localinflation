@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import AdSlot from "@/components/AdSlot";
 import RankingTable from "@/components/RankingTable";
 import { percentChange } from "@/lib/calculations";
 import { getAllMetros, getCpiSeries, getWageSeries } from "@/lib/data";
@@ -43,7 +42,6 @@ export default function WagesRankingPage() {
         { header: "Wage-inflation gap", render: (row) => formatPercent(row.gap) },
         { header: "Data coverage", render: (row) => row.coverage }
       ]} />
-      <AdSlot slotName="wages-vs-inflation-lower-body" />
     </main>
   );
 }

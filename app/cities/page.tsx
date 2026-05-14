@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AdSlot from "@/components/AdSlot";
 import { getAllMetros, getAvailableYearsForMetro } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
 
@@ -53,9 +52,6 @@ export default function CitiesPage() {
             </div>
           </section>
         ))}
-      </div>
-      <div className="mt-10">
-        <AdSlot slotName="cities-lower-body" />
       </div>
     </main>
   );

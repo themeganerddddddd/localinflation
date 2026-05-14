@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import AdSlot from "@/components/AdSlot";
 import Calculator from "@/components/Calculator";
 import FAQBlock from "@/components/FAQBlock";
 import HowToReadThis from "@/components/HowToReadThis";
@@ -60,7 +59,6 @@ export default function MetroInflationPage({ params }: { params: { slug: string 
         </p>
       </section>
       <Calculator metros={metros} initialSlug={metro.slug} cpiBySlug={cpi} wagesBySlug={wages} />
-      <AdSlot slotName={`${metro.slug}-results`} />
       <HowToReadThis />
       {isUs ? <FAQBlock items={usFaq} /> : null}
       <MethodologyNote metro={metro} />

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import AdSlot from "@/components/AdSlot";
 import HighestInflationRankings from "@/components/HighestInflationRankings";
 import { getAllMetros } from "@/lib/data";
 import { pageMetadata } from "@/lib/seo";
@@ -15,7 +14,6 @@ export default function HighestInflationPage() {
         <p className="mt-3 text-lg text-slate-600">Rank cities by inflation from a selected base year to the latest available CPI year.</p>
       </div>
       <HighestInflationRankings metros={getAllMetros()} cpiBySlug={cpi} />
-      <AdSlot slotName="highest-inflation-lower-body" />
     </main>
   );
 }

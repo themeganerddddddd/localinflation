@@ -37,12 +37,11 @@ export default function WageCharts({ cpiValues, wageValues, baseYear, comparison
     };
   });
   const yoyValues = yoyData.flatMap((point) => [point.nominalWageGrowth, point.inflationRate]).filter(Number.isFinite);
-  const sortedYoy = [...yoyValues].sort((a, b) => a - b);
-  const lowIndex = Math.floor(sortedYoy.length * 0.05);
-  const highIndex = Math.ceil(sortedYoy.length * 0.95) - 1;
-  const trimmedMin = sortedYoy[lowIndex] ?? Math.min(...yoyValues, 0);
-  const trimmedMax = sortedYoy[highIndex] ?? Math.max(...yoyValues, 1);
-  const yoyPadding = Math.max(1, (trimmedMax - trimmedMin) * 0.25);
+  const yoyMin = Math.min(...yoyValues, 0);
+  const yoyMax = Math.max(...yoyValues, 1);
+  const yoyPadding = Math.max(2, (yoyMax - yoyMin) * 0.45);
+  const yoyDomainMin = Math.floor(yoyMin - yoyPadding);
+  const yoyDomainMax = Math.ceil(yoyMax + yoyPadding);
   const cpiStart = cpiValues.find((point) => point.year === baseYear);
   const cpiEnd = cpiValues.find((point) => point.year === comparisonYear);
   const wageStart = wageValues.find((point) => point.year === baseYear);
@@ -87,7 +86,7 @@ export default function WageCharts({ cpiValues, wageValues, baseYear, comparison
               <LineChart data={yoyData} margin={{ left: 8, right: 24, top: 8, bottom: 8 }}>
                 <CartesianGrid stroke="#e2e8f0" strokeDasharray="3 3" />
                 <XAxis dataKey="year" tickLine={false} axisLine={false} tick={{ fontSize: 12 }} minTickGap={24} />
-                <YAxis domain={[Math.floor(trimmedMin - yoyPadding), Math.ceil(trimmedMax + yoyPadding)]} allowDataOverflow tickLine={false} axisLine={false} tick={{ fontSize: 12 }} tickFormatter={(value) => `${value}%`} width={50} />
+                <YAxis domain={[yoyDomainMin, yoyDomainMax]} tickLine={false} axisLine={false} tick={{ fontSize: 12 }} tickFormatter={(value) => `${value}%`} width={50} />
                 <Tooltip formatter={(value, name) => [formatPercent(Number(value)), String(name)]} />
                 <Legend />
                 <Line type="monotone" dataKey="nominalWageGrowth" name="Nominal wage growth" stroke="#0f766e" strokeWidth={3} dot={false} />

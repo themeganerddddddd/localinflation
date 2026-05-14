@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AdSlot from "@/components/AdSlot";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata("Inflation and Wage Rankings", "Compare metro inflation and wage growth rankings.", "/rankings");
@@ -18,9 +17,6 @@ export default function RankingsPage() {
           <h2 className="text-xl font-bold text-slate-950">Wages vs inflation</h2>
           <p className="mt-2 text-slate-600">See where wages beat or trailed price growth.</p>
         </Link>
-      </div>
-      <div className="mt-8">
-        <AdSlot slotName="rankings-lower-body" />
       </div>
     </main>
   );

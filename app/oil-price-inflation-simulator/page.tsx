@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { readFileSync } from "fs";
 import path from "path";
-import AdSlot from "@/components/AdSlot";
 import OilInflationSimulator from "@/components/OilInflationSimulator";
 import type { OilMacroMonthlyPoint } from "@/components/OilHistoricalRelationshipChart";
 import type { OilLocalProjectionPayload } from "@/components/OilLocalProjectionResults";
@@ -68,7 +67,6 @@ export default function OilPriceInflationSimulatorPage() {
         <p className="mt-4 max-w-4xl text-lg leading-8 text-slate-600">Estimate how a change in crude oil prices could affect inflation through gasoline, energy costs, transportation, producer prices, and broader price pass-through. Results are scenario estimates based on historical research and public data, not forecasts or financial advice.</p>
       </section>
       <OilInflationSimulator metros={getAllMetros()} oilMacroMonthly={getOilMacroMonthlyData()} localProjection={getLocalProjectionData()} varModel={getVarData()} gbdtModel={getGbdtData()} />
-      <AdSlot slotName="oil-simulator-lower-body" />
     </main>
   );
 }
