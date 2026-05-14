@@ -1,0 +1,52 @@
+[
+  {
+    "component": "Gasoline",
+    "slug": "gasoline",
+    "default_cpi_weight": 0.029,
+    "oil_sensitivity_conservative": 0.35,
+    "oil_sensitivity_baseline": 0.5,
+    "oil_sensitivity_high": 0.65,
+    "timing_months": 1,
+    "channel": "direct"
+  },
+  {
+    "component": "Fuel oil and other household fuels",
+    "slug": "fuel-oil",
+    "default_cpi_weight": 0.004,
+    "oil_sensitivity_conservative": 0.4,
+    "oil_sensitivity_baseline": 0.6,
+    "oil_sensitivity_high": 0.8,
+    "timing_months": 1,
+    "channel": "direct"
+  },
+  {
+    "component": "Airline fares",
+    "slug": "airfares",
+    "default_cpi_weight": 0.006,
+    "oil_sensitivity_conservative": 0.05,
+    "oil_sensitivity_baseline": 0.12,
+    "oil_sensitivity_high": 0.2,
+    "timing_months": 3,
+    "channel": "indirect"
+  },
+  {
+    "component": "Transportation services",
+    "slug": "transportation-services",
+    "default_cpi_weight": 0.06,
+    "oil_sensitivity_conservative": 0.01,
+    "oil_sensitivity_baseline": 0.03,
+    "oil_sensitivity_high": 0.06,
+    "timing_months": 6,
+    "channel": "indirect"
+  },
+  {
+    "component": "Food and goods transport channel",
+    "slug": "food-transport",
+    "default_cpi_weight": 0.13,
+    "oil_sensitivity_conservative": 0.005,
+    "oil_sensitivity_baseline": 0.015,
+    "oil_sensitivity_high": 0.03,
+    "timing_months": 6,
+    "channel": "indirect"
+  }
+]

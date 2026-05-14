@@ -1,0 +1,31 @@
+name: Update oil inflation models
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update-oil-models:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas numpy requests scikit-learn statsmodels
+      - run: python scripts/update_oil_macro_data.py
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+      - run: python models/oil_pass_through_local_projection.py
+      - run: python models/oil_pass_through_var.py
+      - run: python models/train_oil_cpi_gbdt.py
+      - name: Commit model outputs
+        run: |
+          git config user.name "localinflation-bot"
+          git config user.email "bot@example.com"
+          git add data/generated
+          git commit -m "Update oil inflation model outputs" || echo "No changes"
+          git push

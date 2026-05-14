@@ -1,0 +1,1175 @@
+﻿[
+    {
+        "slug":  "united-states",
+        "display_name":  "United States",
+        "full_name":  "United States",
+        "state_or_region":  "US",
+        "page_type":  "national",
+        "data_coverage":  "national_cpi",
+        "cpi_series_id":  "CUUR0000SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "new-york",
+                       "los-angeles",
+                       "chicago"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "new-york",
+        "display_name":  "New York City",
+        "full_name":  "New York-Newark-Jersey City, NY-NJ-PA",
+        "state_or_region":  "NY-NJ-PA",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "philadelphia",
+                       "boston",
+                       "washington-dc"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  0.94,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0.08,
+                             "overall_oil_exposure_multiplier":  0.97,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "los-angeles",
+        "display_name":  "Los Angeles",
+        "full_name":  "Los Angeles-Long Beach-Anaheim, CA",
+        "state_or_region":  "CA",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "riverside",
+                       "san-diego",
+                       "san-francisco"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "chicago",
+        "display_name":  "Chicago",
+        "full_name":  "Chicago-Naperville-Elgin, IL-IN-WI",
+        "state_or_region":  "IL-IN-WI",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "milwaukee",
+                       "indianapolis",
+                       "st-louis"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  0.94,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0.08,
+                             "overall_oil_exposure_multiplier":  0.97,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "dallas",
+        "display_name":  "Dallas",
+        "full_name":  "Dallas-Fort Worth-Arlington, TX",
+        "state_or_region":  "TX",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "houston",
+                       "austin",
+                       "san-antonio"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "houston",
+        "display_name":  "Houston",
+        "full_name":  "Houston-The Woodlands-Sugar Land, TX",
+        "state_or_region":  "TX",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "dallas",
+                       "san-antonio",
+                       "new-orleans"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "washington-dc",
+        "display_name":  "Washington DC",
+        "full_name":  "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+        "state_or_region":  "DC-MD-VA-WV",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "baltimore",
+                       "philadelphia",
+                       "richmond"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  0.94,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0.08,
+                             "overall_oil_exposure_multiplier":  0.95,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "philadelphia",
+        "display_name":  "Philadelphia",
+        "full_name":  "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+        "state_or_region":  "PA-NJ-DE-MD",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "new-york",
+                       "baltimore",
+                       "washington-dc"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  0.94,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0.08,
+                             "overall_oil_exposure_multiplier":  0.97,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "miami",
+        "display_name":  "Miami",
+        "full_name":  "Miami-Fort Lauderdale-West Palm Beach, FL",
+        "state_or_region":  "FL",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "tampa",
+                       "orlando",
+                       "jacksonville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "atlanta",
+        "display_name":  "Atlanta",
+        "full_name":  "Atlanta-Sandy Springs-Roswell, GA",
+        "state_or_region":  "GA",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "charlotte",
+                       "nashville",
+                       "birmingham"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "boston",
+        "display_name":  "Boston",
+        "full_name":  "Boston-Cambridge-Newton, MA-NH",
+        "state_or_region":  "MA-NH",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "providence",
+                       "hartford",
+                       "new-york"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  0.94,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0.08,
+                             "overall_oil_exposure_multiplier":  0.97,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "phoenix",
+        "display_name":  "Phoenix",
+        "full_name":  "Phoenix-Mesa-Scottsdale, AZ",
+        "state_or_region":  "AZ",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "las-vegas",
+                       "san-diego",
+                       "denver"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "san-francisco",
+        "display_name":  "San Francisco",
+        "full_name":  "San Francisco-Oakland-Hayward, CA",
+        "state_or_region":  "CA",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "san-jose",
+                       "sacramento",
+                       "los-angeles"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  0.94,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0.08,
+                             "overall_oil_exposure_multiplier":  0.93,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "riverside",
+        "display_name":  "Riverside",
+        "full_name":  "Riverside-San Bernardino-Ontario, CA",
+        "state_or_region":  "CA",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "los-angeles",
+        "nearby":  [
+                       "los-angeles",
+                       "san-diego",
+                       "phoenix"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "detroit",
+        "display_name":  "Detroit",
+        "full_name":  "Detroit-Warren-Dearborn, MI",
+        "state_or_region":  "MI",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "cleveland",
+                       "chicago",
+                       "columbus"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "seattle",
+        "display_name":  "Seattle",
+        "full_name":  "Seattle-Tacoma-Bellevue, WA",
+        "state_or_region":  "WA",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "portland",
+                       "san-francisco",
+                       "denver"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  0.94,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0.08,
+                             "overall_oil_exposure_multiplier":  0.95,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "minneapolis",
+        "display_name":  "Minneapolis",
+        "full_name":  "Minneapolis-St. Paul-Bloomington, MN-WI",
+        "state_or_region":  "MN-WI",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "milwaukee",
+                       "chicago",
+                       "kansas-city"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "san-diego",
+        "display_name":  "San Diego",
+        "full_name":  "San Diego-Carlsbad, CA",
+        "state_or_region":  "CA",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "los-angeles",
+        "nearby":  [
+                       "los-angeles",
+                       "riverside",
+                       "phoenix"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "tampa",
+        "display_name":  "Tampa",
+        "full_name":  "Tampa-St. Petersburg-Clearwater, FL",
+        "state_or_region":  "FL",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "miami",
+        "nearby":  [
+                       "orlando",
+                       "miami",
+                       "jacksonville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "denver",
+        "display_name":  "Denver",
+        "full_name":  "Denver-Aurora-Lakewood, CO",
+        "state_or_region":  "CO",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "salt-lake-city",
+                       "phoenix",
+                       "kansas-city"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "baltimore",
+        "display_name":  "Baltimore",
+        "full_name":  "Baltimore-Columbia-Towson, MD",
+        "state_or_region":  "MD",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "washington-dc",
+        "nearby":  [
+                       "washington-dc",
+                       "philadelphia",
+                       "richmond"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "st-louis",
+        "display_name":  "St. Louis",
+        "full_name":  "St. Louis, MO-IL",
+        "state_or_region":  "MO-IL",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "kansas-city",
+                       "chicago",
+                       "louisville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "orlando",
+        "display_name":  "Orlando",
+        "full_name":  "Orlando-Kissimmee-Sanford, FL",
+        "state_or_region":  "FL",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "miami",
+        "nearby":  [
+                       "tampa",
+                       "miami",
+                       "jacksonville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "charlotte",
+        "display_name":  "Charlotte",
+        "full_name":  "Charlotte-Concord-Gastonia, NC-SC",
+        "state_or_region":  "NC-SC",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "raleigh",
+                       "atlanta",
+                       "nashville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "san-antonio",
+        "display_name":  "San Antonio",
+        "full_name":  "San Antonio-New Braunfels, TX",
+        "state_or_region":  "TX",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "dallas",
+        "nearby":  [
+                       "austin",
+                       "houston",
+                       "dallas"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "portland",
+        "display_name":  "Portland",
+        "full_name":  "Portland-Vancouver-Hillsboro, OR-WA",
+        "state_or_region":  "OR-WA",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "seattle",
+                       "sacramento",
+                       "san-francisco"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "sacramento",
+        "display_name":  "Sacramento",
+        "full_name":  "Sacramento-Roseville-Arden-Arcade, CA",
+        "state_or_region":  "CA",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "san-francisco",
+        "nearby":  [
+                       "san-francisco",
+                       "san-jose",
+                       "portland"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "pittsburgh",
+        "display_name":  "Pittsburgh",
+        "full_name":  "Pittsburgh, PA",
+        "state_or_region":  "PA",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "cleveland",
+                       "columbus",
+                       "philadelphia"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "las-vegas",
+        "display_name":  "Las Vegas",
+        "full_name":  "Las Vegas-Henderson-Paradise, NV",
+        "state_or_region":  "NV",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0400SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "west",
+        "nearby":  [
+                       "phoenix",
+                       "salt-lake-city",
+                       "los-angeles"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "austin",
+        "display_name":  "Austin",
+        "full_name":  "Austin-Round Rock, TX",
+        "state_or_region":  "TX",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "dallas",
+        "nearby":  [
+                       "san-antonio",
+                       "houston",
+                       "dallas"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "cincinnati",
+        "display_name":  "Cincinnati",
+        "full_name":  "Cincinnati, OH-KY-IN",
+        "state_or_region":  "OH-KY-IN",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "columbus",
+                       "louisville",
+                       "indianapolis"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "kansas-city",
+        "display_name":  "Kansas City",
+        "full_name":  "Kansas City, MO-KS",
+        "state_or_region":  "MO-KS",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "st-louis",
+                       "oklahoma-city",
+                       "denver"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "columbus",
+        "display_name":  "Columbus",
+        "full_name":  "Columbus, OH",
+        "state_or_region":  "OH",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0200SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "midwest",
+        "nearby":  [
+                       "cincinnati",
+                       "cleveland",
+                       "pittsburgh"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "indianapolis",
+        "display_name":  "Indianapolis",
+        "full_name":  "Indianapolis-Carmel-Anderson, IN",
+        "state_or_region":  "IN",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0200SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "midwest",
+        "nearby":  [
+                       "chicago",
+                       "cincinnati",
+                       "louisville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "cleveland",
+        "display_name":  "Cleveland",
+        "full_name":  "Cleveland-Elyria, OH",
+        "state_or_region":  "OH",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "pittsburgh",
+                       "columbus",
+                       "detroit"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "san-jose",
+        "display_name":  "San Jose",
+        "full_name":  "San Jose-Sunnyvale-Santa Clara, CA",
+        "state_or_region":  "CA",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "san-francisco",
+        "nearby":  [
+                       "san-francisco",
+                       "sacramento",
+                       "los-angeles"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "nashville",
+        "display_name":  "Nashville",
+        "full_name":  "Nashville-Davidson--Murfreesboro--Franklin, TN",
+        "state_or_region":  "TN",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "atlanta",
+                       "charlotte",
+                       "louisville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "virginia-beach",
+        "display_name":  "Virginia Beach",
+        "full_name":  "Virginia Beach-Norfolk-Newport News, VA-NC",
+        "state_or_region":  "VA-NC",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "richmond",
+                       "washington-dc",
+                       "raleigh"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "providence",
+        "display_name":  "Providence",
+        "full_name":  "Providence-Warwick, RI-MA",
+        "state_or_region":  "RI-MA",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "boston",
+        "nearby":  [
+                       "boston",
+                       "hartford",
+                       "new-york"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "jacksonville",
+        "display_name":  "Jacksonville",
+        "full_name":  "Jacksonville, FL",
+        "state_or_region":  "FL",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "miami",
+        "nearby":  [
+                       "orlando",
+                       "tampa",
+                       "atlanta"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "milwaukee",
+        "display_name":  "Milwaukee",
+        "full_name":  "Milwaukee-Waukesha-West Allis, WI",
+        "state_or_region":  "WI",
+        "page_type":  "metro",
+        "data_coverage":  "direct_metro_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  null,
+        "nearby":  [
+                       "chicago",
+                       "minneapolis",
+                       "detroit"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "oklahoma-city",
+        "display_name":  "Oklahoma City",
+        "full_name":  "Oklahoma City, OK",
+        "state_or_region":  "OK",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "dallas",
+                       "kansas-city",
+                       "austin"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.04,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "raleigh",
+        "display_name":  "Raleigh",
+        "full_name":  "Raleigh, NC",
+        "state_or_region":  "NC",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "charlotte",
+                       "richmond",
+                       "virginia-beach"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "memphis",
+        "display_name":  "Memphis",
+        "full_name":  "Memphis, TN-MS-AR",
+        "state_or_region":  "TN-MS-AR",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "nashville",
+                       "birmingham",
+                       "st-louis"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1.08,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.03,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "richmond",
+        "display_name":  "Richmond",
+        "full_name":  "Richmond, VA",
+        "state_or_region":  "VA",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "washington-dc",
+                       "virginia-beach",
+                       "raleigh"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "new-orleans",
+        "display_name":  "New Orleans",
+        "full_name":  "New Orleans-Metairie, LA",
+        "state_or_region":  "LA",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "houston",
+                       "memphis",
+                       "birmingham"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "louisville",
+        "display_name":  "Louisville",
+        "full_name":  "Louisville/Jefferson County, KY-IN",
+        "state_or_region":  "KY-IN",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0200SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "midwest",
+        "nearby":  [
+                       "cincinnati",
+                       "indianapolis",
+                       "nashville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "salt-lake-city",
+        "display_name":  "Salt Lake City",
+        "full_name":  "Salt Lake City, UT",
+        "state_or_region":  "UT",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0400SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "west",
+        "nearby":  [
+                       "denver",
+                       "las-vegas",
+                       "phoenix"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "hartford",
+        "display_name":  "Hartford",
+        "full_name":  "Hartford-West Hartford-East Hartford, CT",
+        "state_or_region":  "CT",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "VERIFY",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "boston",
+        "nearby":  [
+                       "providence",
+                       "boston",
+                       "new-york"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "buffalo",
+        "display_name":  "Buffalo",
+        "full_name":  "Buffalo-Cheektowaga-Niagara Falls, NY",
+        "state_or_region":  "NY",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0100SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "northeast",
+        "nearby":  [
+                       "cleveland",
+                       "pittsburgh",
+                       "new-york"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  1.08,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  1.02,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    },
+    {
+        "slug":  "birmingham",
+        "display_name":  "Birmingham",
+        "full_name":  "Birmingham-Hoover, AL",
+        "state_or_region":  "AL",
+        "page_type":  "metro",
+        "data_coverage":  "regional_proxy_cpi",
+        "cpi_series_id":  "CUUR0300SA0",
+        "wage_series_id":  "VERIFY",
+        "fallback_cpi_slug":  "south",
+        "nearby":  [
+                       "atlanta",
+                       "memphis",
+                       "nashville"
+                   ],
+        "oil_exposure":  {
+                             "driving_multiplier":  1,
+                             "heating_fuel_multiplier":  0.93,
+                             "transit_offset":  0,
+                             "overall_oil_exposure_multiplier":  0.98,
+                             "note":  "Initial proxy based on broad driving, heating fuel, and transit exposure patterns; replace with verified local transportation and energy-use data when available."
+                         }
+    }
+]

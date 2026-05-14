@@ -1,0 +1,50 @@
+{
+  "model": "VAR",
+  "status": "trained",
+  "shock": "one_standard_deviation_wti_shock",
+  "description": "VAR impulse response of CPI variables after WTI oil price shock.",
+  "updated_at": "2026-05-14T16:56:24.140190+00:00",
+  "lag_order": 10,
+  "responses": [
+    {
+      "horizon_months": 1,
+      "cpi_effect_pp": 0.0019,
+      "core_cpi_effect_pp": 0.0005,
+      "energy_cpi_effect_pp": 0.032
+    },
+    {
+      "horizon_months": 3,
+      "cpi_effect_pp": 0.0306,
+      "core_cpi_effect_pp": 0.0074,
+      "energy_cpi_effect_pp": 0.2309
+    },
+    {
+      "horizon_months": 6,
+      "cpi_effect_pp": 0.2507,
+      "core_cpi_effect_pp": 0.0636,
+      "energy_cpi_effect_pp": 1.5488
+    },
+    {
+      "horizon_months": 12,
+      "cpi_effect_pp": 2.0876,
+      "core_cpi_effect_pp": 0.548,
+      "energy_cpi_effect_pp": 13.2999
+    },
+    {
+      "horizon_months": 24,
+      "cpi_effect_pp": 6.7513,
+      "core_cpi_effect_pp": 1.8004,
+      "energy_cpi_effect_pp": 43.6267
+    },
+    {
+      "horizon_months": 36,
+      "cpi_effect_pp": 3.537,
+      "core_cpi_effect_pp": 0.8662,
+      "energy_cpi_effect_pp": 24.8899
+    }
+  ],
+  "notes": [
+    "VAR impulse responses are historical estimates, not forecasts.",
+    "Shock scale is one standard deviation unless otherwise rescaled."
+  ]
+}

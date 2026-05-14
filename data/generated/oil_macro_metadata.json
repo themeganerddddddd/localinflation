@@ -1,0 +1,12 @@
+{
+  "status": "placeholder",
+  "updated_at": "2026-05-14T16:56:20.923755+00:00",
+  "source_notes": [
+    "FRED",
+    "BLS and EIA where configured",
+    "placeholder data when public/API access fails"
+  ],
+  "row_count": 432,
+  "start_date": "1990-01",
+  "end_date": "2025-12"
+}

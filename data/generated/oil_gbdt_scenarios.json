@@ -1,0 +1,262 @@
+{
+  "model": "GBDT",
+  "status": "trained",
+  "description": "Trained gradient-boosted scenario model using historical oil, gasoline, CPI, and macro data.",
+  "updated_at": "2026-05-14T16:56:36.512742+00:00",
+  "targets": [
+    "1m",
+    "3m",
+    "6m",
+    "12m"
+  ],
+  "metrics": {
+    "1m": {
+      "mae": 0.0229,
+      "rmse": 0.0288,
+      "baseline_mae": 0.0868,
+      "n_train": 340,
+      "n_test": 85,
+      "train_start": "1990-07",
+      "test_end": "2025-11"
+    },
+    "3m": {
+      "mae": 0.103,
+      "rmse": 0.1264,
+      "baseline_mae": 0.2594,
+      "n_train": 339,
+      "n_test": 84,
+      "train_start": "1990-07",
+      "test_end": "2025-09"
+    },
+    "6m": {
+      "mae": 0.2866,
+      "rmse": 0.3525,
+      "baseline_mae": 0.5088,
+      "n_train": 336,
+      "n_test": 84,
+      "train_start": "1990-07",
+      "test_end": "2025-06"
+    },
+    "12m": {
+      "mae": 0.6894,
+      "rmse": 0.8558,
+      "baseline_mae": 0.9629,
+      "n_train": 332,
+      "n_test": 82,
+      "train_start": "1990-07",
+      "test_end": "2024-12"
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "cpi_mom_pct_lag1",
+      "importance": 0.6788
+    },
+    {
+      "feature": "oil_volatility_6m",
+      "importance": 0.1029
+    },
+    {
+      "feature": "wti_mom_pct",
+      "importance": 0.0623
+    },
+    {
+      "feature": "dollar_index_mom_pct",
+      "importance": 0.0552
+    },
+    {
+      "feature": "wti_6m_pct",
+      "importance": 0.039
+    },
+    {
+      "feature": "industrial_production_mom_pct",
+      "importance": 0.027
+    },
+    {
+      "feature": "cpi_energy_mom_pct_lag1",
+      "importance": 0.0158
+    },
+    {
+      "feature": "gasoline_3m_pct",
+      "importance": 0.0127
+    },
+    {
+      "feature": "month",
+      "importance": 0.0047
+    },
+    {
+      "feature": "unemployment_rate",
+      "importance": 0.0014
+    },
+    {
+      "feature": "federal_funds_rate",
+      "importance": 0.0
+    },
+    {
+      "feature": "brent_mom_pct",
+      "importance": 0.0
+    },
+    {
+      "feature": "gasoline_mom_pct",
+      "importance": 0.0
+    },
+    {
+      "feature": "diesel_mom_pct",
+      "importance": 0.0
+    },
+    {
+      "feature": "wti_3m_pct",
+      "importance": 0.0
+    },
+    {
+      "feature": "core_cpi_mom_pct_lag1",
+      "importance": 0.0
+    },
+    {
+      "feature": "ppi_mom_pct_lag1",
+      "importance": 0.0
+    },
+    {
+      "feature": "recession",
+      "importance": 0.0
+    },
+    {
+      "feature": "year",
+      "importance": 0.0
+    }
+  ],
+  "scenario_estimates": [
+    {
+      "oil_shock_pct": 10,
+      "horizon_months": 1,
+      "low": 0.0223,
+      "mid": 0.0511,
+      "high": 0.0799,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 10,
+      "horizon_months": 3,
+      "low": 0.0789,
+      "mid": 0.2053,
+      "high": 0.3317,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 10,
+      "horizon_months": 6,
+      "low": 0.8756,
+      "mid": 1.2281,
+      "high": 1.5806,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 10,
+      "horizon_months": 12,
+      "low": 2.625,
+      "mid": 3.4808,
+      "high": 4.3366,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 25,
+      "horizon_months": 1,
+      "low": 0.0254,
+      "mid": 0.0542,
+      "high": 0.083,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 25,
+      "horizon_months": 3,
+      "low": 0.0863,
+      "mid": 0.2127,
+      "high": 0.3391,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 25,
+      "horizon_months": 6,
+      "low": 1.0165,
+      "mid": 1.369,
+      "high": 1.7215,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 25,
+      "horizon_months": 12,
+      "low": 2.6299,
+      "mid": 3.4857,
+      "high": 4.3415,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 50,
+      "horizon_months": 1,
+      "low": 0.0332,
+      "mid": 0.062,
+      "high": 0.0908,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 50,
+      "horizon_months": 3,
+      "low": 0.1089,
+      "mid": 0.2353,
+      "high": 0.3617,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 50,
+      "horizon_months": 6,
+      "low": 1.0388,
+      "mid": 1.3913,
+      "high": 1.7438,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 50,
+      "horizon_months": 12,
+      "low": 2.6299,
+      "mid": 3.4857,
+      "high": 4.3415,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 100,
+      "horizon_months": 1,
+      "low": 0.0332,
+      "mid": 0.062,
+      "high": 0.0908,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 100,
+      "horizon_months": 3,
+      "low": 0.1089,
+      "mid": 0.2353,
+      "high": 0.3617,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 100,
+      "horizon_months": 6,
+      "low": 1.0388,
+      "mid": 1.3913,
+      "high": 1.7438,
+      "unit": "cumulative_percent"
+    },
+    {
+      "oil_shock_pct": 100,
+      "horizon_months": 12,
+      "low": 2.6299,
+      "mid": 3.4857,
+      "high": 4.3415,
+      "unit": "cumulative_percent"
+    }
+  ],
+  "notes": [
+    "This is a trained statistical scenario model, not a guaranteed forecast.",
+    "Historical relationships may change across inflation regimes."
+  ]
+}

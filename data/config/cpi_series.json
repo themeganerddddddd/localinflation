@@ -1,0 +1,206 @@
+{
+  "united-states": {
+    "series_id": "CUUR0000SA0",
+    "coverage": "national_cpi"
+  },
+  "new-york": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "los-angeles": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "chicago": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "dallas": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "houston": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "washington-dc": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "philadelphia": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "miami": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "atlanta": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "boston": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "phoenix": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "san-francisco": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "riverside": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "detroit": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "seattle": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "minneapolis": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "san-diego": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "tampa": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "denver": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "baltimore": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "st-louis": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "orlando": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "charlotte": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "san-antonio": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "portland": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "sacramento": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "pittsburgh": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "las-vegas": {
+    "series_id": "CUUR0400SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "austin": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "cincinnati": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "kansas-city": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "columbus": {
+    "series_id": "CUUR0200SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "indianapolis": {
+    "series_id": "CUUR0200SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "cleveland": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "san-jose": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "nashville": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "virginia-beach": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "providence": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "jacksonville": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "milwaukee": {
+    "series_id": "VERIFY",
+    "coverage": "direct_metro_cpi"
+  },
+  "oklahoma-city": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "raleigh": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "memphis": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "richmond": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "new-orleans": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "louisville": {
+    "series_id": "CUUR0200SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "salt-lake-city": {
+    "series_id": "CUUR0400SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "hartford": {
+    "series_id": "VERIFY",
+    "coverage": "regional_proxy_cpi"
+  },
+  "buffalo": {
+    "series_id": "CUUR0100SA0",
+    "coverage": "regional_proxy_cpi"
+  },
+  "birmingham": {
+    "series_id": "CUUR0300SA0",
+    "coverage": "regional_proxy_cpi"
+  }
+}

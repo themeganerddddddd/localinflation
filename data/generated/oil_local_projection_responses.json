@@ -1,0 +1,55 @@
+{
+  "model": "Local Projections",
+  "status": "trained",
+  "shock": "10_percent_oil_price_increase",
+  "description": "Estimated historical CPI response to a 10% monthly WTI oil price shock.",
+  "updated_at": "2026-05-14T16:56:22.630626+00:00",
+  "responses": [
+    {
+      "horizon_months": 1,
+      "cpi_effect_pp": 0.638,
+      "lower_ci": 0.605,
+      "upper_ci": 0.671,
+      "n_obs": 429
+    },
+    {
+      "horizon_months": 3,
+      "cpi_effect_pp": 2.7913,
+      "lower_ci": 2.6491,
+      "upper_ci": 2.9336,
+      "n_obs": 427
+    },
+    {
+      "horizon_months": 6,
+      "cpi_effect_pp": 7.7887,
+      "lower_ci": 7.3951,
+      "upper_ci": 8.1823,
+      "n_obs": 424
+    },
+    {
+      "horizon_months": 12,
+      "cpi_effect_pp": 20.5171,
+      "lower_ci": 19.2617,
+      "upper_ci": 21.7724,
+      "n_obs": 418
+    },
+    {
+      "horizon_months": 24,
+      "cpi_effect_pp": 37.3402,
+      "lower_ci": 33.8848,
+      "upper_ci": 40.7957,
+      "n_obs": 406
+    },
+    {
+      "horizon_months": 36,
+      "cpi_effect_pp": 29.6764,
+      "lower_ci": 26.2844,
+      "upper_ci": 33.0685,
+      "n_obs": 394
+    }
+  ],
+  "notes": [
+    "Historical estimates are not forecasts.",
+    "Effects are estimated from monthly historical relationships."
+  ]
+}
