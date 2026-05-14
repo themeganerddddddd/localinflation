@@ -5,7 +5,7 @@ export const SITE_NAME = "LocalInflation";
 export const SITE_TAGLINE = "Local inflation, wage growth, and cost-pressure tools for U.S. cities.";
 
 export function buildCanonicalUrl(path = "/"): string {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localinflation.example.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localinflation.com";
   return new URL(path, siteUrl).toString();
 }
 
@@ -54,10 +54,21 @@ export function buildWebApplicationJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     name: SITE_NAME,
-    description: SITE_TAGLINE,
+    url: buildCanonicalUrl("/"),
+    description: "LocalInflation provides inflation calculators, wage comparisons, future-cost scenarios, and oil-price inflation simulation tools using public economic data.",
     applicationCategory: "FinanceApplication",
     operatingSystem: "Web",
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" }
+  };
+}
+
+export function buildWebSiteJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: buildCanonicalUrl("/"),
+    description: "Local inflation, wage growth, purchasing power, and cost-pressure tools for U.S. cities."
   };
 }
 
@@ -66,8 +77,19 @@ export function buildDatasetJsonLd() {
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: `${SITE_NAME} CPI and wage data`,
-    description: "Generated economic data structured for BLS CPI and wage updates.",
+    description: "Public inflation, wage, and cost-pressure data compiled from public economic sources where available.",
     creator: { "@type": "Organization", name: SITE_NAME }
+  };
+}
+
+export function buildPersonJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Westley Sturhan",
+    description: "Economic development researcher and civic data builder focused on making local economic data easier to understand.",
+    email: "weststurhan@gmail.com",
+    url: buildCanonicalUrl("/methodology")
   };
 }
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import FutureCostExplorer from "@/components/FutureCostExplorer";
 import MethodologyNote from "@/components/MethodologyNote";
 import RelatedLocations from "@/components/RelatedLocations";
@@ -29,6 +30,14 @@ export default function MetroFuturePage({ params }: { params: { slug: string } }
       <FutureCostExplorer metros={getAllMetros()} cpiBySlug={cpi} initialSlug={metro.slug} />
       <MethodologyNote metro={metro} />
       <RelatedLocations metros={getNearbyMetros(metro.slug)} />
+      <section className="grid gap-3 sm:grid-cols-3">
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href={`/inflation-calculator/${metro.slug}`}>{metro.display_name} inflation calculator</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href={`/wage-vs-inflation/${metro.slug}`}>Wages vs inflation</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/inflation-calculator/united-states">U.S. inflation calculator</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/oil-price-inflation-simulator">Oil-price inflation simulator</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/rankings/highest-inflation">Highest inflation rankings</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/cities">All city calculators</Link>
+      </section>
     </main>
   );
 }

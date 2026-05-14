@@ -7,7 +7,7 @@ import HowToReadThis from "@/components/HowToReadThis";
 import MethodologyNote from "@/components/MethodologyNote";
 import RelatedLocations from "@/components/RelatedLocations";
 import { getAllMetros, getMetroBySlug, getNearbyMetros } from "@/lib/data";
-import { buildFAQJsonLd, buildMetroDescription, buildMetroTitle, pageMetadata } from "@/lib/seo";
+import { buildBreadcrumbJsonLd, buildFAQJsonLd, buildMetroDescription, buildMetroTitle, pageMetadata } from "@/lib/seo";
 import cpi from "@/data/generated/cpi.json";
 import wages from "@/data/generated/wages.json";
 
@@ -45,6 +45,11 @@ export default function MetroInflationPage({ params }: { params: { slug: string 
 
   return (
     <main className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 lg:px-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildBreadcrumbJsonLd([
+        { name: "Home", url: "/" },
+        { name: "Inflation Calculator", url: "/inflation-calculator" },
+        { name: metro.display_name, url: `/inflation-calculator/${metro.slug}` }
+      ])) }} />
       {isUs ? <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildFAQJsonLd(usFaq)) }} /> : null}
       <section>
         <p className="text-sm font-bold uppercase tracking-wide text-blue-700">{metro.display_name}</p>
@@ -58,15 +63,23 @@ export default function MetroInflationPage({ params }: { params: { slug: string 
               : "Because BLS does not publish a dedicated CPI series for every city, this page uses the closest available CPI geography and labels the data source clearly."}
         </p>
       </section>
+      <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h2 className="text-xl font-bold text-slate-950">What this local calculator does</h2>
+        <p className="mt-3 leading-7 text-slate-600">The {metro.display_name} inflation calculator estimates how prices changed over time using the best available public CPI data. Where direct local CPI is unavailable, LocalInflation labels the closest available metro, regional, or national proxy.</p>
+      </section>
       <Calculator metros={metros} initialSlug={metro.slug} cpiBySlug={cpi} wagesBySlug={wages} />
       <HowToReadThis />
       {isUs ? <FAQBlock items={usFaq} /> : null}
       <MethodologyNote metro={metro} />
       <RelatedLocations metros={getNearbyMetros(metro.slug)} />
       <section className="grid gap-3 sm:grid-cols-3">
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/inflation-calculator/united-states">U.S. inflation calculator</Link>
         <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href={`/wage-vs-inflation/${metro.slug}`}>Wages vs inflation</Link>
         <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href={`/future-costs/${metro.slug}`}>Future costs</Link>
         <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/rankings/highest-inflation">Rankings preview</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/rankings/wages-vs-inflation">Wage rankings</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/oil-price-inflation-simulator">Oil-price inflation simulator</Link>
+        <Link className="rounded-lg border border-slate-200 bg-white p-5 font-bold text-blue-800 shadow-sm" href="/cities">All city calculators</Link>
       </section>
     </main>
   );

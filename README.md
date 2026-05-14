@@ -37,3 +37,20 @@ EIA_API_KEY=
 ```
 
 If public/API data or Python dependencies are unavailable, the scripts write placeholder outputs so the app keeps working.
+
+## Post-Deploy Checklist
+
+```txt
+1. Confirm https://localinflation.com loads.
+2. Confirm /robots.txt loads.
+3. Confirm /sitemap.xml loads.
+4. Confirm /ads.txt loads.
+5. Confirm page source contains ca-pub-3475349544392275 if AdSense script is enabled.
+6. Submit sitemap to Google Search Console.
+7. Submit sitemap to Bing Webmaster Tools.
+8. Use URL inspection for key pages:
+   /inflation-calculator/united-states
+   /oil-price-inflation-simulator
+   /cities
+   /salary-inflation-calculator
+```

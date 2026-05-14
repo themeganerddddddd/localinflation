@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadata } from "@/lib/seo";
+import { buildBreadcrumbJsonLd, buildPersonJsonLd, pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata(
   "Methodology / About",
@@ -10,6 +10,11 @@ export const metadata: Metadata = pageMetadata(
 export default function MethodologyPage() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildBreadcrumbJsonLd([
+        { name: "Home", url: "/" },
+        { name: "Methodology / About", url: "/methodology" }
+      ])) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildPersonJsonLd()) }} />
       <section className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
         <div>
           <p className="text-sm font-bold uppercase tracking-wide text-blue-700">Methodology / About</p>
@@ -37,6 +42,7 @@ export default function MethodologyPage() {
             <p><span className="font-semibold text-slate-900">Machine-learning model:</span> the GBDT scaffold is intended to train nonlinear scenario estimates from historical oil, gasoline, CPI, PPI, labor-market, interest-rate, and macroeconomic features. Until trained data is available, the hand-coded tree model is labeled as an experimental prototype rather than a trained GBDT estimate.</p>
             <p>All oil-price inflation outputs are scenario estimates or historical pass-through estimates. They are not forecasts, guarantees, investment advice, employment advice, legal advice, or policy advice. Historical relationships can change across inflation regimes, monetary policy environments, supply shocks, and geopolitical events.</p>
           </div>
+
         </div>
 
         <aside className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">

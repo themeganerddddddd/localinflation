@@ -27,36 +27,25 @@ Set these in Vercel:
 
 ```txt
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
-NEXT_PUBLIC_ADSENSE_CLIENT_ID=ca-pub-your-adsense-id
-NEXT_PUBLIC_ADSENSE_SLOT_ID=your-display-ad-slot-id
 BLS_API_KEY=your-bls-api-key
 ```
 
-## AdSense slots
+## AdSense
 
-Ad placements are intentionally below the core calculator/result areas:
+The AdSense publisher script is included globally in `app/layout.tsx` with:
 
 ```txt
-homepage-lower
-inflation-calculator-after-results
-inflation-calculator-lower-body
-future-costs-lower-body
-oil-simulator-lower-body
-cities-lower-body
-rankings-lower-body
-highest-inflation-lower-body
-wages-vs-inflation-lower-body
-{city-slug}-results
+ca-pub-3475349544392275
 ```
 
-For launch, the fastest setup is to create one responsive display ad unit in AdSense and set its numeric slot ID as `NEXT_PUBLIC_ADSENSE_SLOT_ID`. Later, you can replace individual logical slot names with separate numeric slot IDs if you want per-page reporting.
+The site does not use placeholder ad blocks. Confirm `/ads.txt` is reachable after deployment.
 
 ## Before launch checklist
 
 ```txt
 1. Add production domain to NEXT_PUBLIC_SITE_URL.
-2. Add AdSense publisher ID.
-3. Add a numeric AdSense display ad slot ID.
+2. Confirm the AdSense script appears in page source.
+3. Confirm /ads.txt loads.
 4. Confirm /privacy, /terms, /methodology, /about are visible.
 5. Confirm sitemap.xml and robots.txt load.
 6. Submit the domain to Google Search Console.
