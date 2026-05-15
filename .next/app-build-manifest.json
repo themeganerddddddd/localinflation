@@ -12,16 +12,9 @@
       "static/chunks/fd9d1056-93c81328cce69892.js",
       "static/chunks/117-7484c8d0d44fa128.js",
       "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/css/e562a60b07ffe71f.css",
+      "static/css/e064ab5ac00b0ca3.css",
       "static/chunks/972-f5bb0ed0204f3bfc.js",
       "static/chunks/app/layout-e233d7c0f7ac1159.js"
-    ],
-    "/compare/[pair]/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/app/compare/[pair]/page-84430a3d3a90d75d.js"
     ],
     "/about/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
@@ -29,6 +22,13 @@
       "static/chunks/117-7484c8d0d44fa128.js",
       "static/chunks/main-app-b54615c6a97a66d6.js",
       "static/chunks/app/about/page-e718a3f8bbffa676.js"
+    ],
+    "/compare/[pair]/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/app/compare/[pair]/page-84430a3d3a90d75d.js"
     ],
     "/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
@@ -41,14 +41,6 @@
       "static/chunks/13-d056e818a70ace72.js",
       "static/chunks/app/page-6c178b82063de025.js"
     ],
-    "/cities/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/app/cities/page-18b580a74a07e9d0.js"
-    ],
     "/future-costs/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
       "static/chunks/fd9d1056-93c81328cce69892.js",
@@ -59,6 +51,14 @@
       "static/chunks/156-e85307f69a6b2cc5.js",
       "static/chunks/822-e998e07de5a4ab16.js",
       "static/chunks/app/future-costs/page-7724fb8cc24355c4.js"
+    ],
+    "/city-inflation-calculator/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/app/city-inflation-calculator/page-d403a9db018ca6ba.js"
     ],
     "/compare/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
@@ -71,22 +71,6 @@
       "static/chunks/13-d056e818a70ace72.js",
       "static/chunks/app/compare/page-5436b24ee62fcfc9.js"
     ],
-    "/future-cost-calculator/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/app/future-cost-calculator/page-b243da037e450b32.js"
-    ],
-    "/city-inflation-calculator/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/app/city-inflation-calculator/page-65bd1f0236f90750.js"
-    ],
     "/inflation-calculator/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
       "static/chunks/fd9d1056-93c81328cce69892.js",
@@ -98,19 +82,13 @@
       "static/chunks/13-d056e818a70ace72.js",
       "static/chunks/app/inflation-calculator/page-6c653733b7bc4a8c.js"
     ],
-    "/methodology/page": [
+    "/future-cost-calculator/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
       "static/chunks/fd9d1056-93c81328cce69892.js",
       "static/chunks/117-7484c8d0d44fa128.js",
       "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/app/methodology/page-f7ff24ca27ea4798.js"
-    ],
-    "/privacy/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/app/privacy/page-bce78da8d3edf8dd.js"
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/app/future-cost-calculator/page-8b042b9de319b4de.js"
     ],
     "/future-costs/[slug]/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
@@ -123,14 +101,6 @@
       "static/chunks/822-e998e07de5a4ab16.js",
       "static/chunks/app/future-costs/[slug]/page-a80ca34446c83396.js"
     ],
-    "/rankings/highest-inflation/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/app/rankings/highest-inflation/page-8f3755554fece5b2.js"
-    ],
     "/inflation-calculator/[slug]/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
       "static/chunks/fd9d1056-93c81328cce69892.js",
@@ -142,6 +112,59 @@
       "static/chunks/13-d056e818a70ace72.js",
       "static/chunks/app/inflation-calculator/[slug]/page-141b95296430005f.js"
     ],
+    "/rankings/highest-inflation/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/app/rankings/highest-inflation/page-8f3755554fece5b2.js"
+    ],
+    "/cities/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/app/cities/page-694073a6cb16f70b.js"
+    ],
+    "/methodology/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/app/methodology/page-5983c37cc287872f.js"
+    ],
+    "/rankings/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/app/rankings/page-dba4cd3f0184533b.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/app/privacy/page-649b5aa75a3ebcd8.js"
+    ],
+    "/rankings/wages-vs-inflation/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/app/rankings/wages-vs-inflation/page-f1c58bd8ccbf09a8.js"
+    ],
+    "/terms/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/app/terms/page-35a321715172b613.js"
+    ],
     "/oil-price-inflation-simulator/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
       "static/chunks/fd9d1056-93c81328cce69892.js",
@@ -150,48 +173,6 @@
       "static/chunks/972-f5bb0ed0204f3bfc.js",
       "static/chunks/617-18f940f545691aec.js",
       "static/chunks/app/oil-price-inflation-simulator/page-9a7452cb6bf30b63.js"
-    ],
-    "/terms/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/app/terms/page-39ed0e05cc1c856a.js"
-    ],
-    "/rankings/wages-vs-inflation/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/app/rankings/wages-vs-inflation/page-62b6d469d194fbaa.js"
-    ],
-    "/rankings/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/app/rankings/page-05810cee394e639d.js"
-    ],
-    "/salary-inflation-calculator/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/app/salary-inflation-calculator/page-1a4f526b78c44015.js"
-    ],
-    "/wage-vs-inflation/[slug]/page": [
-      "static/chunks/webpack-a964f9f360aeb747.js",
-      "static/chunks/fd9d1056-93c81328cce69892.js",
-      "static/chunks/117-7484c8d0d44fa128.js",
-      "static/chunks/main-app-b54615c6a97a66d6.js",
-      "static/chunks/972-f5bb0ed0204f3bfc.js",
-      "static/chunks/617-18f940f545691aec.js",
-      "static/chunks/156-e85307f69a6b2cc5.js",
-      "static/chunks/13-d056e818a70ace72.js",
-      "static/chunks/app/wage-vs-inflation/[slug]/page-02d90b9f6e4498ab.js"
     ],
     "/wage-vs-inflation/page": [
       "static/chunks/webpack-a964f9f360aeb747.js",
@@ -203,6 +184,25 @@
       "static/chunks/156-e85307f69a6b2cc5.js",
       "static/chunks/13-d056e818a70ace72.js",
       "static/chunks/app/wage-vs-inflation/page-e23bde045e32e282.js"
+    ],
+    "/salary-inflation-calculator/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/app/salary-inflation-calculator/page-eefb5d8fa09f6a8e.js"
+    ],
+    "/wage-vs-inflation/[slug]/page": [
+      "static/chunks/webpack-a964f9f360aeb747.js",
+      "static/chunks/fd9d1056-93c81328cce69892.js",
+      "static/chunks/117-7484c8d0d44fa128.js",
+      "static/chunks/main-app-b54615c6a97a66d6.js",
+      "static/chunks/972-f5bb0ed0204f3bfc.js",
+      "static/chunks/617-18f940f545691aec.js",
+      "static/chunks/156-e85307f69a6b2cc5.js",
+      "static/chunks/13-d056e818a70ace72.js",
+      "static/chunks/app/wage-vs-inflation/[slug]/page-02d90b9f6e4498ab.js"
     ]
   }
 }

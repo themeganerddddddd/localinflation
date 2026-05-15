@@ -28,7 +28,7 @@ const nav = [
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <head>
         <script
           async
@@ -36,16 +36,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
       </head>
-      <body className="min-h-screen font-sans antialiased">
+      <body className="min-h-screen overflow-x-hidden font-sans antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildWebSiteJsonLd()) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildWebApplicationJsonLd()) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildDatasetJsonLd()) }} />
-        <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
-          <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-            <Link href="/" className="text-xl font-black tracking-tight text-blue-900">LocalInflation</Link>
-            <nav className="flex flex-wrap gap-2 text-sm font-semibold text-slate-600">
+        <header className="z-30 overflow-hidden border-b border-slate-200 bg-white/95 backdrop-blur lg:sticky lg:top-0">
+          <div className="mx-auto flex max-w-7xl min-w-0 flex-col gap-3 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+            <Link href="/" className="min-w-0 text-xl font-black tracking-tight text-blue-900">LocalInflation</Link>
+            <nav className="grid w-full min-w-0 grid-cols-2 gap-2 text-xs font-semibold text-slate-600 sm:flex sm:flex-wrap sm:text-sm lg:w-auto">
               {nav.map(([label, href]) => (
-                <Link key={href} className="rounded-full px-3 py-2 hover:bg-blue-50 hover:text-blue-800" href={href}>{label}</Link>
+                <Link key={href} className="min-w-0 rounded-xl bg-slate-50 px-3 py-2 text-center leading-5 hover:bg-blue-50 hover:text-blue-800 sm:rounded-full sm:bg-transparent" href={href}>{label}</Link>
               ))}
             </nav>
           </div>
