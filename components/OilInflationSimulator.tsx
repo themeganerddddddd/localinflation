@@ -106,7 +106,7 @@ export default function OilInflationSimulator({ metros, oilMacroMonthly = [], lo
 
   return (
     <section className="grid gap-6">
-      <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xl shadow-slate-200/60 sm:p-6">
+      <div className="min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-xl shadow-slate-200/60 sm:p-6">
         <OilScenarioForm
           metros={metros}
           location={location}
@@ -120,7 +120,7 @@ export default function OilInflationSimulator({ metros, oilMacroMonthly = [], lo
           passThrough={passThrough}
           setPassThrough={setPassThrough}
         />
-        <p className="mt-4 text-sm text-slate-500">Assumptions: gasoline CPI weight {DEFAULT_GASOLINE_CPI_WEIGHT * 100}%, {passThrough} pass-through, {horizon}-month scenario horizon. Results are scenario estimates based on historical pass-through, not predictions.</p>
+        <p className="mt-4 break-words text-sm leading-6 text-slate-500">Assumptions: gasoline CPI weight {DEFAULT_GASOLINE_CPI_WEIGHT * 100}%, {passThrough} pass-through, {horizon}-month scenario horizon. Results are scenario estimates based on historical pass-through, not predictions.</p>
       </div>
 
       <OilResultCards
@@ -134,7 +134,7 @@ export default function OilInflationSimulator({ metros, oilMacroMonthly = [], lo
         localProjection={localProjection}
       />
 
-      <section className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+      <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
         <h2 className="text-lg font-black text-slate-950">Why the models differ</h2>
         <p className="mt-3 leading-7 text-slate-600">Direct gasoline contribution is narrow and immediate. It only measures gasoline's direct contribution to all-items CPI. The stress scenario adds possible indirect pressure from related channels. The calibrated duration model estimates cumulative pressure while oil remains elevated. The local projection model estimates historical CPI responses after oil shocks. The experimental tree-based model adds nonlinear scenario assumptions using CPI momentum, oil volatility, regional sensitivity, and duration. These are different model views, not contradictions.</p>
       </section>
@@ -145,7 +145,7 @@ export default function OilInflationSimulator({ metros, oilMacroMonthly = [], lo
         <OilGbdtResults payload={gbdtModel} />
       </div>
 
-      <details className="rounded-xl border border-slate-200 bg-white p-5 text-sm shadow-sm">
+      <details className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 text-sm shadow-sm sm:p-5">
         <summary className="cursor-pointer text-lg font-black text-slate-950">Assumptions and direct-channel explanation</summary>
         <div className="mt-5 grid gap-6 lg:grid-cols-[1fr_1.2fr]">
           <OilConceptExplainer />

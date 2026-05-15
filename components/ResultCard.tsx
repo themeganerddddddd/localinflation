@@ -17,10 +17,10 @@ const toneClass = {
 
 export default function ResultCard({ eyebrow, title, value, detail, tooltip, tone = "slate" }: ResultCardProps) {
   return (
-    <div title={tooltip} className={`rounded-xl border p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md ${toneClass[tone]}`}>
+    <div title={tooltip} className={`min-w-0 rounded-xl border p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md sm:p-5 ${toneClass[tone]}`}>
       {eyebrow ? <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{eyebrow}</p> : null}
-      <h3 className="mt-2 text-sm font-semibold text-slate-700">{title}</h3>
-      <p className="mt-3 text-2xl font-bold sm:text-3xl">{value}</p>
+      <h3 className="mt-2 break-words text-sm font-semibold leading-5 text-slate-700">{title}</h3>
+      <p className="mt-3 break-words text-2xl font-bold leading-tight sm:text-3xl">{value}</p>
       {detail ? <p className="mt-3 text-sm leading-6 text-slate-600">{detail}</p> : null}
     </div>
   );

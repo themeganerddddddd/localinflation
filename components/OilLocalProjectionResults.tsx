@@ -20,8 +20,8 @@ export type OilLocalProjectionPayload = {
 export default function OilLocalProjectionResults({ payload }: { payload?: OilLocalProjectionPayload }) {
   if (!payload || payload.status === "placeholder" || !payload.responses?.length) {
     return (
-      <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 className="text-xl font-black text-slate-950">Historical local projection model</h2>
+      <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+        <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">Historical local projection model</h2>
         <p className="mt-3 leading-7 text-slate-600">Historical model not trained yet. This section is designed to estimate CPI responses after oil shocks using historical monthly oil and CPI data.</p>
         <p className="mt-3 text-sm font-semibold text-amber-700">Historical relationships can change across regimes. These estimates are not guaranteed forecasts.</p>
       </section>
@@ -29,24 +29,26 @@ export default function OilLocalProjectionResults({ payload }: { payload?: OilLo
   }
 
   return (
-    <section className="grid gap-5 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+    <section className="grid min-w-0 gap-5 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
       <div>
-        <h2 className="text-xl font-black text-slate-950">Historical local projection model</h2>
+        <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">Historical local projection model</h2>
         <p className="mt-3 leading-7 text-slate-600">Local projections estimate the inflation response separately at each time horizon. This makes it easier to show how oil shocks historically affected CPI after 1 month, 3 months, 12 months, and beyond.</p>
         <p className="mt-3 text-sm font-semibold text-amber-700">Historical relationships can change across regimes. These estimates are not guaranteed forecasts.</p>
       </div>
-      <div className="h-72">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={payload.responses}>
+      <div className="h-72 overflow-hidden">
+        <div className="h-full min-w-0 sm:min-w-[620px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={payload.responses} margin={{ left: 0, right: 8, top: 12, bottom: 0 }}>
             <CartesianGrid stroke="#e2e8f0" strokeDasharray="3 3" />
-            <XAxis dataKey="horizon_months" tickFormatter={(value) => `${value}m`} />
-            <YAxis tickFormatter={(value) => `${Number(value).toFixed(2)}%`} />
+            <XAxis tick={{ fontSize: 11 }} dataKey="horizon_months" tickFormatter={(value) => `${value}m`} />
+            <YAxis width={42} tick={{ fontSize: 11 }} tickFormatter={(value) => `${Number(value).toFixed(2)}%`} />
             <Tooltip formatter={(value, name) => [`${Number(value).toFixed(2)}%`, String(name)]} labelFormatter={(label) => `${label} months`} />
             <Line type="monotone" dataKey="cpi_effect_pp" name="Estimated CPI effect" stroke="#2563eb" strokeWidth={3} />
             <Line type="monotone" dataKey="lower_ci" name="Lower CI" stroke="#94a3b8" strokeDasharray="4 4" dot={false} />
             <Line type="monotone" dataKey="upper_ci" name="Upper CI" stroke="#94a3b8" strokeDasharray="4 4" dot={false} />
-          </LineChart>
-        </ResponsiveContainer>
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
       </div>
       <div className="overflow-x-auto">
         <table className="w-full min-w-[680px] text-left text-sm">

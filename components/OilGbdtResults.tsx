@@ -20,16 +20,16 @@ export type OilGbdtPayload = {
 export default function OilGbdtResults({ payload }: { payload?: OilGbdtPayload }) {
   if (!payload || payload.status !== "trained" || !payload.scenario_estimates?.length) {
     return (
-      <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 className="text-xl font-black text-slate-950">Trained GBDT model not available yet</h2>
+      <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+        <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">Trained GBDT model not available yet</h2>
         <p className="mt-3 leading-7 text-slate-600">GBDT model not trained yet. The experimental tree-based scenario estimate remains available as a fallback prototype.</p>
       </section>
     );
   }
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-      <h2 className="text-xl font-black text-slate-950">Trained GBDT scenario estimate</h2>
+    <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+      <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">Trained GBDT scenario estimate</h2>
       <p className="mt-3 leading-7 text-slate-600">{payload.description ?? "Trained nonlinear scenario model using historical oil, gasoline, CPI, and macro data."}</p>
       <div className="mt-5 overflow-x-auto">
         <table className="w-full min-w-[760px] text-left text-sm">

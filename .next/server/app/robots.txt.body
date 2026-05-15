@@ -1,0 +1,19 @@
+User-Agent: *
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: Googlebot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+Sitemap: http://localhost:3000/sitemap.xml

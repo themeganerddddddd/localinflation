@@ -19,16 +19,16 @@ export type OilVarPayload = {
 export default function OilVarResults({ payload }: { payload?: OilVarPayload }) {
   if (!payload || payload.status === "placeholder" || !payload.responses?.length) {
     return (
-      <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 className="text-xl font-black text-slate-950">VAR impulse-response model not trained yet</h2>
+      <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+        <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">VAR impulse-response model not trained yet</h2>
         <p className="mt-3 leading-7 text-slate-600">This section is designed to estimate historical dynamic responses across oil, gasoline, energy CPI, all-items CPI, and core CPI.</p>
       </section>
     );
   }
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-      <h2 className="text-xl font-black text-slate-950">VAR impulse-response estimate</h2>
+    <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+      <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">VAR impulse-response estimate</h2>
       <p className="mt-3 leading-7 text-slate-600">{payload.description ?? "VAR impulse response of CPI variables after WTI oil price shock."}</p>
       <div className="mt-5 overflow-x-auto">
         <table className="w-full min-w-[720px] text-left text-sm">

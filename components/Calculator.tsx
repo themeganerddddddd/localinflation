@@ -59,11 +59,11 @@ export default function Calculator({ metros, initialSlug, cpiBySlug, wagesBySlug
   const futureBaseline = buildFutureScenarios(cpiValues, amount, latestYear, futureTarget).find((scenario) => scenario.label === "Baseline");
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white/95 p-5 shadow-xl shadow-slate-200/60 ring-1 ring-white sm:p-6">
+    <div className="min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-xl shadow-slate-200/60 ring-1 ring-white sm:p-6">
       <div className="mb-5 flex flex-col gap-2 border-b border-slate-100 pb-5 sm:flex-row sm:items-end sm:justify-between">
-        <div>
+        <div className="min-w-0">
           <p className="text-sm font-bold uppercase tracking-wide text-blue-700">Inflation calculator</p>
-          <h2 className="text-2xl font-black text-slate-950">Enter your information</h2>
+          <h2 className="break-words text-2xl font-black text-slate-950">Enter your information</h2>
         </div>
         <p className="text-sm text-slate-500">Any available year to any available year</p>
       </div>

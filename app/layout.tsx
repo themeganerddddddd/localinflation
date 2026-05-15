@@ -53,7 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <footer className="mt-16 border-t border-slate-200 bg-white">
           <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-xs leading-6 text-slate-500 sm:px-6 lg:px-8">
-            <p>© 2026 LocalInflation. Public data tools for inflation, wages, purchasing power, and cost-pressure scenarios.</p>
+            <p>&copy; 2026 LocalInflation. Public data tools for inflation, wages, purchasing power, and cost-pressure scenarios.</p>
             <div className="flex flex-wrap gap-x-4 gap-y-2">
               <Link href="/methodology" className="font-semibold text-slate-600 hover:text-blue-800">About & Methodology</Link>
               <Link href="/privacy" className="font-semibold text-slate-600 hover:text-blue-800">Privacy</Link>

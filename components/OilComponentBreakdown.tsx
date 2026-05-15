@@ -8,23 +8,23 @@ export default function OilComponentBreakdown({ effects, metro }: { effects: Oil
   const exposure = metro?.oil_exposure;
   const localMultiplier = exposure?.overall_oil_exposure_multiplier ?? 1;
   return (
-    <div className="grid gap-4">
-      <div className="grid gap-3 sm:grid-cols-4">
-        <div className="rounded-xl border border-blue-100 bg-blue-50 p-4">
+    <div className="grid min-w-0 gap-4">
+      <div className="grid min-w-0 gap-3 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="min-w-0 rounded-xl border border-blue-100 bg-blue-50 p-4">
           <p className="text-xs font-bold uppercase tracking-wide text-blue-700">Direct channels</p>
-          <p className="mt-2 text-2xl font-black text-blue-950">{split.direct.toFixed(2)}%</p>
+          <p className="mt-2 break-words text-2xl font-black leading-tight text-blue-950">{split.direct.toFixed(2)}%</p>
         </div>
-        <div className="rounded-xl border border-amber-100 bg-amber-50 p-4">
+        <div className="min-w-0 rounded-xl border border-amber-100 bg-amber-50 p-4">
           <p className="text-xs font-bold uppercase tracking-wide text-amber-700">Indirect channels</p>
-          <p className="mt-2 text-2xl font-black text-amber-950">{split.indirect.toFixed(2)}%</p>
+          <p className="mt-2 break-words text-2xl font-black leading-tight text-amber-950">{split.indirect.toFixed(2)}%</p>
         </div>
-        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
           <p className="text-xs font-bold uppercase tracking-wide text-slate-500">Total component estimate</p>
-          <p className="mt-2 text-2xl font-black text-slate-950">{split.total.toFixed(2)}%</p>
+          <p className="mt-2 break-words text-2xl font-black leading-tight text-slate-950">{split.total.toFixed(2)}%</p>
         </div>
-        <div className="rounded-xl border border-teal-100 bg-teal-50 p-4">
+        <div className="min-w-0 rounded-xl border border-teal-100 bg-teal-50 p-4">
           <p className="text-xs font-bold uppercase tracking-wide text-teal-700">Local exposure estimate</p>
-          <p className="mt-2 text-2xl font-black text-teal-950">{(total * localMultiplier).toFixed(2)}%</p>
+          <p className="mt-2 break-words text-2xl font-black leading-tight text-teal-950">{(total * localMultiplier).toFixed(2)}%</p>
           <p className="mt-1 text-xs text-teal-900">Multiplier {localMultiplier.toFixed(2)}x</p>
         </div>
       </div>
@@ -34,9 +34,9 @@ export default function OilComponentBreakdown({ effects, metro }: { effects: Oil
         </p>
       ) : null}
 
-      <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-        <div className="border-b border-slate-100 p-5">
-          <h2 className="text-xl font-black text-slate-950">Component-weight CPI model</h2>
+      <div className="min-w-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+        <div className="border-b border-slate-100 p-4 sm:p-5">
+          <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">Component-weight CPI model</h2>
           <p className="mt-2 text-sm leading-6 text-slate-500">Component weights and sensitivities are assumptions until replaced with verified CPI relative-importance data and validated pass-through estimates. Treat this as a scenario estimate of possible inflationary effect, not a forecast.</p>
         </div>
         <div className="overflow-x-auto">

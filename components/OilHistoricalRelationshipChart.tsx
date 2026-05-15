@@ -40,33 +40,35 @@ export default function OilHistoricalRelationshipChart({ data = [] }: OilHistori
 
   if (!chartData.length) {
     return (
-      <section className="rounded-xl border border-dashed border-slate-300 bg-slate-50 p-6">
-        <h2 className="text-xl font-black text-slate-950">Historical oil, gasoline, and CPI relationship</h2>
+      <section className="min-w-0 rounded-xl border border-dashed border-slate-300 bg-slate-50 p-4 sm:p-6">
+        <h2 className="break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">Historical oil, gasoline, and CPI relationship</h2>
         <p className="mt-3 leading-7 text-slate-600">Historical monthly oil macro data is not available yet. Run the oil macro update script to generate the validation chart.</p>
       </section>
     );
   }
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+    <section className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
       <div className="mb-4">
         <p className="text-sm font-bold uppercase tracking-wide text-teal-700">Historical validation</p>
-        <h2 className="mt-1 text-xl font-black text-slate-950">Monthly oil, gasoline, and CPI changes</h2>
+        <h2 className="mt-1 break-words text-lg font-black leading-7 text-slate-950 sm:text-xl">Monthly oil, gasoline, and CPI changes</h2>
         <p className="mt-2 text-sm leading-6 text-slate-500">This chart compares monthly percent changes. It helps show historical pass-through patterns, but it does not prove a forecast for any single oil-price scenario.</p>
       </div>
-      <div className="h-80">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={chartData} margin={{ left: 4, right: 12, top: 12, bottom: 0 }}>
+      <div className="h-72 overflow-hidden sm:h-80">
+        <div className="h-full min-w-0 sm:min-w-[700px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={chartData} margin={{ left: 0, right: 8, top: 12, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-            <XAxis dataKey="date" minTickGap={28} tick={{ fontSize: 12 }} />
-            <YAxis tick={{ fontSize: 12 }} tickFormatter={(value) => `${Number(value).toFixed(1)}%`} />
+            <XAxis dataKey="date" minTickGap={34} interval="preserveStartEnd" tick={{ fontSize: 11 }} />
+            <YAxis width={40} tick={{ fontSize: 11 }} tickFormatter={(value) => `${Number(value).toFixed(1)}%`} />
             <Tooltip formatter={(value, name) => [formatPercent(Number(value)), String(name)]} labelFormatter={(label) => `Month: ${label}`} />
             <Legend />
             {series.map((item) => (
               <Line key={item.key} type="monotone" dataKey={item.key} name={item.name} stroke={item.color} strokeWidth={2} dot={false} />
             ))}
-          </LineChart>
-        </ResponsiveContainer>
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </section>
   );

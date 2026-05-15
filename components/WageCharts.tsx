@@ -52,19 +52,19 @@ export default function WageCharts({ cpiValues, wageValues, baseYear, comparison
 
   return (
     <section className="grid gap-5">
-      <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
         <div className="flex items-start justify-between gap-4">
-          <div>
+          <div className="min-w-0">
             <p className="text-sm font-bold uppercase tracking-wide text-teal-700">Wage chart</p>
-            <h2 className="mt-1 text-xl font-bold text-slate-950">Wages with wage growth vs wages if kept at inflation</h2>
+            <h2 className="mt-1 text-lg font-bold leading-7 text-slate-950 sm:text-xl">Wages with wage growth vs wages if kept at inflation</h2>
           </div>
         </div>
-        <div className="mt-5 h-80 overflow-x-auto pb-2">
-          <div className="h-full min-w-[820px]">
+        <div className="mt-5 h-72 overflow-x-auto pb-2 sm:h-80">
+          <div className="h-full min-w-0 sm:min-w-[720px]">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={wageData} margin={{ left: 8, right: 24, top: 8, bottom: 8 }}>
                 <CartesianGrid stroke="#e2e8f0" strokeDasharray="3 3" />
-                <XAxis dataKey="year" tickLine={false} axisLine={false} tick={{ fontSize: 12 }} minTickGap={24} />
+                <XAxis dataKey="year" tickLine={false} axisLine={false} tick={{ fontSize: 11 }} minTickGap={28} interval="preserveStartEnd" />
                 <YAxis tickLine={false} axisLine={false} tick={{ fontSize: 12 }} tickFormatter={(value) => `$${Math.round(Number(value) / 1000)}k`} width={60} />
                 <Tooltip formatter={(value, name) => [formatDollar(Number(value)), String(name)]} />
                 <Legend />
@@ -77,15 +77,15 @@ export default function WageCharts({ cpiValues, wageValues, baseYear, comparison
         <p className="mt-3 text-xs leading-5 text-slate-500">Data source note: CPI values use Bureau of Labor Statistics CPI series where available. Wage values are structured as generated placeholders until verified BLS/OEWS wage series are connected.</p>
       </div>
 
-      <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+      <div className="min-w-0 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
         <p className="text-sm font-bold uppercase tracking-wide text-blue-700">Year-over-year rates</p>
-        <h2 className="mt-1 text-xl font-bold text-slate-950">Nominal wage growth and inflation rate</h2>
-        <div className="mt-5 h-80 overflow-x-auto pb-2">
-          <div className="h-full min-w-[820px]">
+        <h2 className="mt-1 text-lg font-bold leading-7 text-slate-950 sm:text-xl">Nominal wage growth and inflation rate</h2>
+        <div className="mt-5 h-72 overflow-x-auto pb-2 sm:h-80">
+          <div className="h-full min-w-0 sm:min-w-[720px]">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={yoyData} margin={{ left: 8, right: 24, top: 8, bottom: 8 }}>
                 <CartesianGrid stroke="#e2e8f0" strokeDasharray="3 3" />
-                <XAxis dataKey="year" tickLine={false} axisLine={false} tick={{ fontSize: 12 }} minTickGap={24} />
+                <XAxis dataKey="year" tickLine={false} axisLine={false} tick={{ fontSize: 11 }} minTickGap={28} interval="preserveStartEnd" />
                 <YAxis domain={[yoyDomainMin, yoyDomainMax]} tickLine={false} axisLine={false} tick={{ fontSize: 12 }} tickFormatter={(value) => `${value}%`} width={50} />
                 <Tooltip formatter={(value, name) => [formatPercent(Number(value)), String(name)]} />
                 <Legend />
